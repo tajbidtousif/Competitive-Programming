@@ -1,2 +1,2 @@
-# Competitive-Programming-(C++)
+# Competitive-Programming
 Coding challenge and practice.
