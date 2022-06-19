@@ -1,30 +1,36 @@
-    #include<bits/stdc++.h>
-    using namespace std;
+#include<bits/stdc++.h>
+using namespace std;
+int const N = 1e5+10; 
+vector<int>G[N];
+int bool vis[N];
 
-    int main()
+int bfs(int source)
+{
+    queue<int>q;
+    q.push(source);
+    vis[source] = 1;
+
+    while(!q.empty())
     {
-
-        long long n, k, ans, mid;
-
-        cin >> n >> k;
-
-        mid = n/2;
-
-        if(n%2 != 0)
-        {
-            mid++;
-        }
-
-        if(mid >= k)
-        {
-            ans = (2*k) - 1;
-        }
-
-        else{
-
-            ans = (k-mid)*2;
-        }
-
-        cout << ans << endl;
-
+        int c_vers = q.front();
+        
     }
+}
+
+int main()
+  {
+    int n;
+    cin >> n;
+
+    for(int i=0; i<n-1; i++)
+     {
+        int x,y;
+        cin >> x >> y;
+        G[x].push_back(y);
+        G[y].push_back(x);
+     }
+
+     bfs(1);
+        
+
+}
